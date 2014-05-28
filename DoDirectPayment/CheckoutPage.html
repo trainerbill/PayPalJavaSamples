@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+        <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+                <title>CheckoutPage</title>
+        </head>
+
+        <body>
+                <form name="paypalform" action="expresscheckout.jsp" method="post">
+                        <input type='image' name='submit' src='https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif' border='0' align='top' alt='Check out with PayPal'/>
+                </form>
+                 <br/>
+                    Or
+                 <br/><br/>
+                <form name="directpaymentform" action="directpayment.jsp" method="post">
+                        <table>
+                            <tr>
+                                <td>Credit Card Number : </td>
+                                <td><input type="text" name="CreditCardNumber" maxlength="16" size="20" value="4683075410516684"/></td>
+                            </tr>
+                            <tr>
+                                <td>    Credit Card Type :</td><td>
+                                    <select name="CreditCardType">
+                                    <option value="Visa" name="Visa">
+                                    Visa
+                                    </option>
+                                    <option value="Master Card" name="Master Card">
+                                    Master Card
+                                    </option>
+                                    <option value="Discover" name="Discover">
+                                    Discover
+                                    </option>
+                                    <option value="American Express" name="American Express">
+                                    American Express
+                                    </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  Expiration Date : </td>
+                                <td>
+                                    MM <input type="text" name="Month" size="2" maxlength="2" value="12"/> &nbsp &nbsp
+                                    YYYY <input type="text" name="Year" size="4" maxlength="4" value="2014"/> &nbsp &nbsp
+                                    CSC
+                                    <input type="text" name="CSC" maxlength="4" size="4" value="123"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    First Name :</td>
+                                    <td>
+                                    <input type="text" name="FirstName" size="50" value="Pavana"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Last Name :</td>
+                                    <td>
+                                    <input type="text" name="LastName" size="50" value="D"/>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Street :</td>
+                                    <td>
+                                    <input type="text" name="addressline1" size="100" value="1 Main St."/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    City :</td>
+                                    <td>
+                                    <input type="text" name="City" size="100" value="San Jose"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    State :</td>
+                                    <td>
+                                    <input type="text" name="state" maxlength="2" size="2" value="CA"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Zipcode :</td>
+                                    <td>
+                                    <input type="text" name="Zipcode" maxlength="5" size="5" value="95131"/>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>
+                            </td>
+                            </tr>
+                             <tr>
+                            <td>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" name="Review and Continue"
+                                    value="Review and Confirm"/>
+                                </td>
+                            </tr>
+                        </table>
+                </form>
+        </body>
+</html>
